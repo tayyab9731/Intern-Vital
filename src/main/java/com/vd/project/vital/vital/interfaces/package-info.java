@@ -1,1 +1,0 @@
-package com.vd.project.vital.vital.interfaces;
