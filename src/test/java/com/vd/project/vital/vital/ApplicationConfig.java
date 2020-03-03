@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.vd.project.vital.vital.interfaces.MotherServicesImpl;
+import com.vd.project.vital.vital.services.impl.MotherServicesImpl;
 
 
 public class ApplicationConfig {

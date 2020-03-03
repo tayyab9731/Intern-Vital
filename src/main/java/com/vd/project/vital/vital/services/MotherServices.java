@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.vd.project.vital.Exceptions.MotherNotFoundException;
 import com.vd.project.vital.vital.model.Mother;
 import com.vd.project.vital.vital.repositories.motherRepositories;
-import com.vd.projject.vital.Exceptions.MotherNotFoundException;
 
 @Service
 public interface MotherServices {
@@ -20,7 +20,7 @@ public interface MotherServices {
 		
 	//to get a single mother
 		
-		String getmother(Long id) ;
+		Mother getmother(Long id) ;
 
 		
 	//to add a mother along with her children
