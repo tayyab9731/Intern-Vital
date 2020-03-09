@@ -11,7 +11,7 @@ import com.vd.project.vital.vital.model.Mother;
 public interface  motherRepositories extends CrudRepository<Mother,Long>{
 
 
-@Query(nativeQuery=true,value="SELECT * " + 
+@Query(nativeQuery=true,value="SELECT id,value AS basicinfo " + 
 		"FROM   mother m, jsonb_array_elements(m.basicinfo->'Children') ch " + 
 		"WHERE  ch->>'Gender' = ?2  and m.id=?1" )
 Optional<Mother> findByIdChildren(Long id,String gender);

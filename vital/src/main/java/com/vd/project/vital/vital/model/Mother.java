@@ -1,7 +1,5 @@
 package com.vd.project.vital.vital.model;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -47,5 +45,9 @@ public String getBasicinfo() {
 public void setBasicinfo(String basicinfo) {
 	this.basicinfo = basicinfo;
 }
+public String print()
+{return basicinfo;
+	}
+
 	
 }
